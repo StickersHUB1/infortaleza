@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Artículo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="article"></main>
+
+  <script>
+  function getParam(name) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(name);
+  }
+
+  async function load() {
+    const slug = getParam('slug');
+    const query = getParam('q');
+    const res = await fetch('data/articles.json');
+    const articles = await res.json();
+    const article = articles.find(a => a.slug === slug);
+    if (!article) {
+      document.getElementById('article').innerHTML = '<h1>Artículo no encontrado</h1>';
+      return;
+    }
+    const htmlRes = await fetch(article.content);
+    const htmlContent = await htmlRes.text();
+    let content = htmlContent;
+    if (query) {
+      const regex = new RegExp(query, 'gi');
+      content = htmlContent.replace(regex, match => '<mark>' + match + '</mark>');
+    }
+    document.getElementById('article').innerHTML = `<h1>${article.title}</h1>` + content;
+  }
+
+  load();
+  </script>
+</body>
+</html>
