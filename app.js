@@ -1,11 +1,17 @@
 let allArticles = [];
 let currentPage = '';
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+
   initNavigation();
-  loadArticlesMeta();
+
+  await loadArticlesMeta();
+
   loadInitialPage();
-  document.getElementById('search').addEventListener('input', performSearch);
+
+  document.getElementById('search')
+  .addEventListener('input', performSearch);
+
 });
 
 function initNavigation() {
