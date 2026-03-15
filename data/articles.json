@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Ejemplo de investigación",
+    "slug": "ejemplo-investigacion",
+    "date": "2026-03-15",
+    "author": "Mike",
+    "tags": ["investigacion"],
+    "summary": "Resumen del artículo de investigación...",
+    "content": "articles/ejemplo-investigacion.html"
+  },
+  {
+    "id": 2,
+    "title": "Documento de análisis",
+    "slug": "documento-analisis",
+    "date": "2026-03-14",
+    "author": "Mike",
+    "tags": ["documento"],
+    "summary": "Resumen del documento...",
+    "content": "articles/documento-analisis.html"
+  }
+]
