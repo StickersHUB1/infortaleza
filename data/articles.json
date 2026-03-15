@@ -9,8 +9,18 @@
     "summary": "Resumen del artículo de investigación...",
     "content": "articles/ejemplo-investigacion.html"
   },
-  {
+    {
     "id": 2,
+    "title": "Ejemplo de Articulo",
+    "slug": "ejemplo-articulo",
+    "date": "2026-03-15",
+    "author": "Mike",
+    "tags": ["articulo"],
+    "summary": "Resumen del artículo...",
+    "content": "articles/ejemplo-article.html"
+  },
+  {
+    "id": 3,
     "title": "Documento de análisis",
     "slug": "documento-analisis",
     "date": "2026-03-14",
