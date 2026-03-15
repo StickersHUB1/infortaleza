@@ -1,94 +1,126 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#0f0f10;
-color:#e4e4e4;
+  background:#0f0f10;
+  color:#e4e4e4;
 }
 
 .header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 40px;
-background:#161618;
-border-bottom:1px solid #2a2a2a;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  background:#161618;
+  border-bottom:1px solid #2a2a2a;
 }
 
 .logo{
-font-weight:bold;
-letter-spacing:2px;
+  font-weight:bold;
+  letter-spacing:2px;
 }
 
 .nav a{
-margin-left:20px;
-text-decoration:none;
-color:#bdbdbd;
+  margin-left:20px;
+  text-decoration:none;
+  color:#bdbdbd;
+  padding-bottom:5px;
+}
+
+.nav a.active{
+  color:#e4e4e4;
+  border-bottom:2px solid #e4e4e4;
 }
 
 .layout{
-display:grid;
-grid-template-columns:3fr 1fr;
-gap:40px;
-padding:40px;
+  display:grid;
+  grid-template-columns:3fr 1fr;
+  gap:40px;
+  padding:40px;
+}
+
+.content{
+  display:flex;
+  flex-direction:column;
+  gap:30px;
 }
 
 .articles{
-display:flex;
-flex-direction:column;
-gap:30px;
+  display:flex;
+  flex-direction:column;
+  gap:30px;
 }
 
 .card{
-background:#1b1b1e;
-padding:25px;
-border:1px solid #2b2b2e;
+  background:#1b1b1e;
+  padding:25px;
+  border:1px solid #2b2b2e;
 }
 
 .card h2{
-margin-bottom:10px;
+  margin-bottom:10px;
 }
 
 .card p{
-color:#c0c0c0;
-margin-bottom:10px;
+  color:#c0c0c0;
+  margin-bottom:10px;
 }
 
 .meta{
-font-size:12px;
-color:#8c8c8c;
+  font-size:12px;
+  color:#8c8c8c;
 }
 
 .sidebar{
-display:flex;
-flex-direction:column;
-gap:30px;
+  display:flex;
+  flex-direction:column;
+  gap:30px;
 }
 
 .box{
-background:#1b1b1e;
-padding:20px;
-border:1px solid #2b2b2e;
+  background:#1b1b1e;
+  padding:20px;
+  border:1px solid #2b2b2e;
 }
 
 .box ul{
-list-style:none;
-margin-top:10px;
+  list-style:none;
+  margin-top:10px;
 }
 
 .box li{
-margin-bottom:6px;
-color:#bdbdbd;
+  margin-bottom:6px;
+  color:#bdbdbd;
 }
 
 .footer{
-margin-top:40px;
-padding:20px;
-text-align:center;
-border-top:1px solid #2a2a2a;
-color:#888;
+  margin-top:40px;
+  padding:20px;
+  text-align:center;
+  border-top:1px solid #2a2a2a;
+  color:#888;
+}
+
+/* Hero para resaltar la vista activa */
+.hero{
+  background:#1b1b1e;
+  padding:20px;
+  border:1px solid #2b2b2e;
+  margin-bottom:20px;
+}
+
+.hero h2{
+  margin-bottom:10px;
+}
+
+/* Resaltado en resultados de búsqueda */
+mark{
+  background-color:#555;
+  color:#fff;
+  padding:0 2px;
+  border-radius:2px;
 }
