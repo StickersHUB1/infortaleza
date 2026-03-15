@@ -1,65 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Inforrtaleza</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Infortaleza</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <header class="header">
-
-<div class="logo">
-INFORRTALEZA
-</div>
-
-<nav class="nav">
-<a href="#">Inicio</a>
-<a href="#">Investigaciones</a>
-<a href="#">Documentos</a>
-<a href="#">Contacto</a>
-</nav>
-
+  <div class="logo">INFORTALEZA</div>
+  <nav class="nav">
+    <a href="#" data-page="inicio">Inicio</a>
+    <a href="#" data-page="investigaciones">Investigaciones</a>
+    <a href="#" data-page="documentos">Documentos</a>
+    <a href="#" data-page="articulos">Artículos</a>
+    <a href="#" data-page="contacto">Contacto</a>
+  </nav>
 </header>
 
 <div class="layout">
+  <main id="content" class="content">
+    <!-- Contenido dinámico se cargará aquí -->
+  </main>
 
-<main class="articles">
-<!-- Aquí se cargarán los artículos reales -->
-</main>
-
-<aside class="sidebar">
-
-<div class="box">
-
-<h3>Buscar</h3>
-<input type="text" placeholder="buscar...">
-
-</div>
-
-<div class="box">
-
-<h3>Temas</h3>
-
-<ul>
-<li>Geopolítica</li>
-<li>Investigación</li>
-<li>Economía</li>
-<li>Historia</li>
-</ul>
-
-</div>
-
-</aside>
-
+  <aside class="sidebar">
+    <div class="box">
+      <h3>Buscar</h3>
+      <input id="search" type="text" placeholder="buscar...">
+    </div>
+    <div class="box">
+      <h3>Temas</h3>
+      <ul id="topics">
+        <li>Geopolítica</li>
+        <li>Investigación</li>
+        <li>Economía</li>
+        <li>Historia</li>
+      </ul>
+    </div>
+  </aside>
 </div>
 
 <footer class="footer">
-Inforrtaleza · 2026
+  Infortaleza · 2026
 </footer>
 
 <script src="app.js"></script>
-
 </body>
 </html>
