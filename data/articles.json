@@ -9,18 +9,8 @@
     "summary": "Resumen del artículo de investigación...",
     "content": "articles/ejemplo-investigacion.html"
   },
-    {
-    "id": 2,
-    "title": "Ejemplo de Articulo",
-    "slug": "ejemplo-articulo",
-    "date": "2026-03-15",
-    "author": "Mike",
-    "tags": ["articulo"],
-    "summary": "Resumen del artículo...",
-    "content": "articles/ejemplo-article.html"
-  },
   {
-    "id": 3,
+    "id": 2,
     "title": "Documento de análisis",
     "slug": "documento-analisis",
     "date": "2026-03-14",
@@ -28,5 +18,15 @@
     "tags": ["documento"],
     "summary": "Resumen del documento...",
     "content": "articles/documento-analisis.html"
-  }
+  },
+  {
+"id": 3,
+"title": "El nuevo orden del comercio mundial",
+"slug": "orden-comercio-mundial",
+"date": "2026-03-16",
+"author": "Infortaleza",
+"tags": ["articulo"],
+"summary": "Cómo las rutas comerciales determinan el poder global.",
+"content": "articles/articulo-ejemplo.html"
+}
 ]
