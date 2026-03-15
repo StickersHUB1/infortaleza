@@ -190,6 +190,24 @@ function buildCard(a) {
   `;
 }
 
+function buildHomeCard(a){
+
+  return `
+  <article class="home-card">
+
+    <h3>${a.title}</h3>
+
+    <p>${a.summary || ''}</p>
+
+    <a href="article.html?slug=${a.slug}">
+      Leer
+    </a>
+
+  </article>
+  `;
+
+}
+
 function capitalize(s) {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
