@@ -1,25 +1,27 @@
 [
-  {
-    "id": 1,
-    "title": "Ejemplo de investigación",
-    "slug": "ejemplo-investigacion",
-    "date": "2026-03-15",
-    "author": "Mike",
-    "tags": ["investigacion"],
-    "summary": "Resumen del artículo de investigación...",
-    "content": "articles/ejemplo-investigacion.html"
-  },
-  {
-    "id": 2,
-    "title": "Documento de análisis",
-    "slug": "documento-analisis",
-    "date": "2026-03-14",
-    "author": "Mike",
-    "tags": ["documento"],
-    "summary": "Resumen del documento...",
-    "content": "articles/documento-analisis.html"
-  },
-  {
+{
+"id": 1,
+"title": "Investigación de ejemplo",
+"slug": "investigacion-ejemplo",
+"date": "2026-03-14",
+"author": "Infortaleza",
+"tags": ["investigacion"],
+"summary": "Ejemplo de investigación dentro del sistema.",
+"content": "articles/investigacion-ejemplo.html"
+},
+
+{
+"id": 2,
+"title": "Documento de análisis",
+"slug": "documento-ejemplo",
+"date": "2026-03-15",
+"author": "Infortaleza",
+"tags": ["documento"],
+"summary": "Documento interno publicado en Infortaleza.",
+"content": "articles/documento-ejemplo.html"
+},
+
+{
 "id": 3,
 "title": "El nuevo orden del comercio mundial",
 "slug": "orden-comercio-mundial",
