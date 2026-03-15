@@ -414,3 +414,27 @@ function renderSearchResults(results,query){
   hero + `<div class="articles">${list}</div>`;
 
 }
+
+
+/* =========================
+   LOADER
+========================= */
+
+function hideLoader(){
+
+  const loader =
+  document.getElementById("loader");
+
+  if(loader){
+
+    loader.style.opacity = "0";
+
+    loader.style.transition = "opacity .4s";
+
+    setTimeout(()=>{
+      loader.remove();
+    },400);
+
+  }
+
+}
