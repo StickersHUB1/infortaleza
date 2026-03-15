@@ -1,67 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
   <meta charset="UTF-8">
+
   <title>Infortaleza</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+
+  <!-- LOADER -->
+
   <div id="loader" class="loader">
 
-  <div class="loader-inner">
+    <div class="loader-inner">
 
-    <div class="loader-logo">
-      INFORTALEZA
-    </div>
+      <div class="loader-logo">
+        INFORTALEZA
+      </div>
 
-    <div class="loader-bar">
-      <div class="loader-progress"></div>
-    </div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
 
-    <div class="loader-text">
-      cargando contenido...
+      <div class="loader-text">
+        cargando contenido...
+      </div>
+
     </div>
 
   </div>
 
-</div>
-<header class="header">
-  <div class="logo">INFORTALEZA</div>
-  <nav class="nav">
-    <a href="#" data-page="inicio">Inicio</a>
-    <a href="#" data-page="investigaciones">Investigaciones</a>
-    <a href="#" data-page="documentos">Documentos</a>
-    <a href="#" data-page="articulos">Artículos</a>
-    <a href="#" data-page="contacto">Contacto</a>
-  </nav>
-</header>
 
-<div class="layout">
-  <main id="content" class="content">
-    <!-- Contenido dinámico se cargará aquí -->
-  </main>
+  <!-- HEADER -->
 
-  <aside class="sidebar">
-    <div class="box">
-      <h3>Buscar</h3>
-      <input id="search" type="text" placeholder="buscar...">
-    </div>
-    <div class="box">
-      <h3>Temas</h3>
-      <ul id="topics">
-        <li>Geopolítica</li>
-        <li>Investigación</li>
-        <li>Economía</li>
-        <li>Historia</li>
-      </ul>
-    </div>
-  </aside>
-</div>
+  <header class="header">
 
-<footer class="footer">
-  Infortaleza · 2026
-</footer>
+    <div class="logo">INFORTALEZA</div>
 
-<script src="app.js"></script>
+    <nav class="nav">
+
+      <a href="#" data-page="inicio">Inicio</a>
+      <a href="#" data-page="investigaciones">Investigaciones</a>
+      <a href="#" data-page="documentos">Documentos</a>
+      <a href="#" data-page="articulos">Artículos</a>
+      <a href="#" data-page="contacto">Contacto</a>
+
+    </nav>
+
+  </header>
+
+
+  <!-- LAYOUT PRINCIPAL -->
+
+  <div class="layout">
+
+    <main id="content" class="content">
+
+      <!-- contenido dinámico -->
+
+    </main>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+      <div class="box">
+
+        <h3>Buscar</h3>
+
+        <input
+          id="search"
+          type="text"
+          placeholder="buscar..."
+          autocomplete="off"
+        >
+
+      </div>
+
+
+      <div class="box">
+
+        <h3>Temas</h3>
+
+        <ul id="topics">
+
+          <li>Geopolítica</li>
+          <li>Investigación</li>
+          <li>Economía</li>
+          <li>Historia</li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    Infortaleza · 2026
+
+  </footer>
+
+
+  <!-- JS -->
+
+  <script src="app.js"></script>
+
 </body>
+
 </html>
